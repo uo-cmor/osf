@@ -1,0 +1,89 @@
+---
+title: "OSF"
+author: "Ross Wilson"
+format: revealjs
+---
+
+# Open Science
+
+## What is Open Science?
+
+* UNESCO Recommendation on Open Science:\
+*Open science is a set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole.*
+
+## "Closed" Science
+
+* Research published only in paywalled journals that not everyone can access
+
+* Data that supports scientific results being unavailable
+
+* Software, code, protocols, etc. being unknown, undocumented, or inaccessible
+
+* Science not being accessible to communities that would benefit from it
+
+## Principles of Open Science
+
+1. Transparency, scrutiny, critique, and responsibility
+
+2. Equality of opportunities
+
+3. Responsibility, respect, and accountability
+
+4. Collaboration, participation, and inclusion
+
+5. Flexibility
+
+6. Sustainability
+
+## The Research Workflow
+
+1. We design a study to answer a research question
+
+2. We collect some data
+
+3. We analyse the data and write a paper
+
+4. The paper gets published
+
+## The Research Workflow
+
+* Usually, only step **4. The paper gets published**, results in any accessible output
+
+  - And often then it is behind a journal paywall and not accessible to all
+
+* **1.**, **2.**, and **3.** are often a black box, accessible only to the researcher themselves 
+
+## Components of Open Science (Open Scientific Knowledge)
+
+* Open access publication
+
+* Open research data
+
+* Open software/source code
+
+* Open protocols/documentation
+
+# Data sharing -- a cautionary tale
+
+---
+
+{{< video https://www.youtube.com/watch?v=N2zK3sAtr-4 width="100%" height="100%" >}}
+
+## Open Science Framework
+
+* At CMOR, we have started using the Open Science Framework (OSF) for collaborative open science
+
+* [https://osf.io](https://osf.io/stw9e/)
+
+## Resources
+
+* Passport for Open Science (Ministry of Higher Education and Research, France)\
+<https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/>
+
+* The Open Science Training Handbook (FOSTER Open Science)\
+<https://open-science-training-handbook.github.io/Open-Science-Training-Handbook_EN/>
+
+* UNESCO Recommendation on Open Science\
+<https://www.unesco.org/en/open-science>
+
+
