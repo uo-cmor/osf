@@ -11,25 +11,134 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Ross Wilson">
-  <title>OSF</title>
+  <meta name="dcterms.date" content="2023-06-29">
+  <title>Open Science at CMOR</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="osf_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="osf_files/libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
-    }
-  </style>
+    <style type="text/css">
+
+      .reveal div.sourceCode {
+        margin: 0;
+        overflow: auto;
+      }
+
+      .reveal div.hanging-indent {
+        margin-left: 1em;
+        text-indent: -1em;
+      }
+
+      .reveal .slide:not(.center) {
+        height: 100%;
+        <% if (scrollable) { %>overflow-y: auto;<% } %>
+      }
+
+      .reveal .slide.scrollable {
+        overflow-y: auto;
+      }
+
+      .reveal .footnotes {
+        height: 100%;
+        overflow-y: auto;
+      }
+
+      .reveal .slide .absolute {
+        position: absolute;
+        display: block;
+      }
+
+      .reveal .footnotes ol {
+        counter-reset: ol;
+        list-style-type: none; 
+        margin-left: 0;
+      }
+
+      .reveal .footnotes ol li:before {
+        counter-increment: ol;
+        content: counter(ol) ". "; 
+      }
+
+      .reveal .footnotes ol li > p:first-child {
+        display: inline-block;
+      }
+
+
+      .reveal .slide ul,
+      .reveal .slide ol {
+        margin-bottom: 0.5em;
+      }
+
+      .reveal .slide ul li,
+      .reveal .slide ol li {
+        margin-top: 0.4em;
+        margin-bottom: 0.2em;
+      }
+      
+      .reveal .slide ul li li,
+      .reveal .slide ol li li {
+      	font-size: 0.9em;
+      }
+
+      .reveal .slide ul li li li,
+      .reveal .slide ol li li li {
+      	font-size: 0.8em;
+      }
+
+      .reveal .slide ul[role="tablist"] li {
+        margin-bottom: 0;
+      }
+
+      .reveal .slide ul li > *:first-child,
+      .reveal .slide ol li > *:first-child {
+        margin-block-start: 0;
+      }
+      .reveal .slide ul li > *:last-child,
+      .reveal .slide ol li > *:last-child {
+        margin-block-end: 0;
+      }
+
+      .reveal .slide .columns:nth-child(3) {
+        margin-block-start: 0.8em;
+      }
+
+      .reveal blockquote {
+        box-shadow: none;
+      }
+
+      .reveal .tippy-content>* {
+        margin-top: 0.2em;
+        margin-bottom: 0.7em;
+      }
+
+      .reveal .tippy-content>*:last-child {
+        margin-bottom: 0.2em;
+      }
+
+      .reveal .slide > img.stretch.quarto-figure-center,
+      .reveal .slide > img.r-stretch.quarto-figure-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+
+      .reveal .slide > img.stretch.quarto-figure-left,
+      .reveal .slide > img.r-stretch.quarto-figure-left  {
+        display: block;
+        margin-left: 0;
+        margin-right: auto; 
+      }
+
+      .reveal .slide > img.stretch.quarto-figure-right,
+      .reveal .slide > img.r-stretch.quarto-figure-right  {
+        display: block;
+        margin-left: auto;
+        margin-right: 0; 
+      }
+
+    </style>  
   <link rel="stylesheet" href="osf_files/libs/revealjs/dist/theme/quarto.css">
   <link href="osf_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="osf_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -324,32 +433,28 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">OSF</h1>
-
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Ross Wilson 
-</div>
-</div>
-</div>
-
+<section id="title-slide" data-background-image="images/otago-pennant.png, images/cmor-banner.png, images/title-background.png" data-background-position="3% 1%, bottom 1% left 50px,0 0" data-background-repeat="no-repeat" data-background-size="7%, 25%, 100%" class="center">
+  <h1 class="title">Open Science at CMOR</h1>
+  <p class="subtitle">CMOR Lunch’n’Learn</p>
+  <p class="date">29 June 2023</p>
+  <p class="author">Ross Wilson</p>
 </section>
 <section>
-<section id="open-science" class="title-slide slide level1 center">
-<h1>Open Science</h1>
+<section id="introduction-to-open-science" class="title-slide slide level1 center">
+<h1>Introduction to Open Science</h1>
 
 </section>
 <section id="what-is-open-science" class="slide level2">
 <h2>What is Open Science?</h2>
-<ul>
-<li>UNESCO Recommendation on Open Science:<br>
-<em>Open science is a set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole.</em></li>
-</ul>
+<p><br></p>
+<blockquote>
+<p>Open science is a set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole.</p>
+</blockquote>
+<p>— UNESCO Recommendation on Open Science</p>
 </section>
 <section id="closed-science" class="slide level2">
 <h2>“Closed” Science</h2>
+<p><br></p>
 <ul>
 <li><p>Research published only in paywalled journals that not everyone can access</p></li>
 <li><p>Data that supports scientific results being unavailable</p></li>
@@ -359,6 +464,7 @@ Ross Wilson
 </section>
 <section id="principles-of-open-science" class="slide level2">
 <h2>Principles of Open Science</h2>
+<p><br></p>
 <ol type="1">
 <li><p>Transparency, scrutiny, critique, and responsibility</p></li>
 <li><p>Equality of opportunities</p></li>
@@ -368,32 +474,113 @@ Ross Wilson
 <li><p>Sustainability</p></li>
 </ol>
 </section>
+<section id="principles-of-open-science-1" class="slide level2">
+<h2>Principles of Open Science</h2>
+<ul>
+<li><p>Today we’ll mostly focus on the first principle</p>
+<ul>
+<li>Transparency, or what we might call ‘open scientific knowledge’</li>
+</ul></li>
+</ul>
+<p><br></p>
+<div class="fragment">
+<ul>
+<li>Are our publications, data, metadata, protocols, educational resources, software, source code freely available to all?</li>
+</ul>
+<p><br></p>
+</div>
+<div class="fragment">
+<p>(This is one end of a continuum of ‘openness’ – depending on the context, nature of the data, etc., it may not be desirable to make all of these completely open in all circumstances)</p>
+</div>
+</section>
 <section id="the-research-workflow" class="slide level2">
 <h2>The Research Workflow</h2>
+<p><br></p>
 <ol type="1">
-<li><p>We design a study to answer a research question</p></li>
-<li><p>We collect some data</p></li>
-<li><p>We analyse the data and write a paper</p></li>
-<li><p>The paper gets published</p></li>
+<li>We design a study to answer a research question</li>
 </ol>
+<p><br></p>
+<div class="fragment">
+<ol start="2" type="1">
+<li>We collect some data</li>
+</ol>
+<p><br></p>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>We analyse the data and write a paper</li>
+</ol>
+<p><br></p>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>The paper gets published</li>
+</ol>
+</div>
 </section>
 <section id="the-research-workflow-1" class="slide level2">
 <h2>The Research Workflow</h2>
+<p><br></p>
 <ul>
-<li><p>Usually, only step <strong>4. The paper gets published</strong>, results in any accessible output</p>
+<li>Usually, only</li>
+</ul>
+<blockquote>
+<p>4. The paper gets published</p>
+</blockquote>
+<p>results in any accessible output</p>
+<div class="fragment">
+<p><br></p>
+<p>(And often then it is behind a journal paywall and not accessible to all)</p>
+</div>
+<div class="fragment">
+<p><br></p>
 <ul>
-<li>And often then it is behind a journal paywall and not accessible to all</li>
-</ul></li>
-<li><p><strong>1.</strong>, <strong>2.</strong>, and <strong>3.</strong> are often a black box, accessible only to the researcher themselves</p></li>
+<li><strong>1.</strong>, <strong>2.</strong>, and <strong>3.</strong> are often a black box, accessible only to the researcher themselves</li>
+</ul>
+</div>
+</section>
+<section id="components-of-open-scientific-knowledge" class="slide level2">
+<h2>Components of Open Scientific Knowledge</h2>
+<p><br></p>
+<ul>
+<li>Open protocols/documentation</li>
+<li>Open research data</li>
+<li>Open software/source code</li>
+<li>Open access publication</li>
 </ul>
 </section>
-<section id="components-of-open-science-open-scientific-knowledge" class="slide level2">
-<h2>Components of Open Science (Open Scientific Knowledge)</h2>
+<section id="open-protocolsdocumentation" class="slide level2">
+<h2>Open protocols/documentation</h2>
+<p><br></p>
 <ul>
-<li><p>Open access publication</p></li>
-<li><p>Open research data</p></li>
-<li><p>Open software/source code</p></li>
-<li><p>Open protocols/documentation</p></li>
+<li>RCTs and systematic reviews now generally require registration and pre-specified protocols, e.g.
+<ul>
+<li><a href="https://clinicaltrials.gov">ClinicalTrials.gov</a> for clinical trials in the US</li>
+<li><a href="https://anzctr.org.au">ANZCTR</a> in Australia/NZ</li>
+<li><a href="https://www.crd.york.ac.uk/prospero/">PROSPERO</a> for systematic reviews</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li>Usually not required for other study types, but still a good idea</li>
+</ul>
+</section>
+<section id="open-research-data" class="slide level2">
+<h2>Open research data</h2>
+<p><br></p>
+<ul>
+<li>Open data allows other researchers to:
+<ul>
+<li>check the correctness of your analysis</li>
+<li>combine your data with other sources (e.g.&nbsp;IPD meta-analysis)</li>
+<li>use your data to answer questions you hadn’t even thought of…</li>
+</ul></li>
+<li>For health data, it is very important to consider the appropriateness of data sharing:
+<ul>
+<li>is additional data preprocessing needed to ensure participant anonymity?</li>
+<li>should there be restrictions on who can access data and for what purpose?</li>
+</ul></li>
+<li>If data is being shared, it needs to be documented clearly</li>
 </ul>
 </section></section>
 <section>
@@ -405,22 +592,151 @@ Ross Wilson
 
 <iframe data-external="1" src="https://www.youtube.com/embed/N2zK3sAtr-4" width="100%" height="100%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </section>
-<section id="open-science-framework" class="slide level2">
-<h2>Open Science Framework</h2>
+<section id="open-softwaresource-code" class="slide level2">
+<h2>Open software/source code</h2>
+<p><br></p>
 <ul>
-<li><p>At CMOR, we have started using the Open Science Framework (OSF) for collaborative open science</p></li>
-<li><p><a href="https://osf.io/stw9e/">https://osf.io</a></p></li>
+<li>As with open data, sharing source code allows others to check the correctness of your analysis</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Wherever possible, the use of open source or freely-available software allows others (or yourself later) to replicate your work</li>
 </ul>
 </section>
-<section id="resources" class="slide level2">
+<section id="open-access-publication" class="slide level2">
+<h2>Open access publication</h2>
+<p><br></p>
+<ul>
+<li><p>Research is of no use if no one can access it…</p></li>
+<li><p>To ensure our research can reach the widest possible audience, aim for open access publishing whenever possible</p>
+<ul>
+<li>Otago has ‘Read &amp; Publish’ agreements with a number of publishers
+<ul>
+<li><a href="https://otago.libguides.com/research_publishing_impact/read-and-publish" class="uri">https://otago.libguides.com/research_publishing_impact/read-and-publish</a></li>
+</ul></li>
+</ul></li>
+<li><p>Otherwise you can usually post either a ‘pre-print’ or ‘post-print’ (accepted manuscript) on an institutional (e.g.&nbsp;OURArchive) or other repository, sometimes after an embargo period.</p>
+<ul>
+<li><a href="https://beta.sherpa.ac.uk/">Sherpa Services</a> provides an easy search function to look up journals’ sharing policies</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="open-science-framework" class="title-slide slide level1 center">
+<h1>Open Science Framework</h1>
+
+</section>
+<section id="open-science-framework-1" class="slide level2">
+<h2>Open Science Framework</h2>
+<p><br></p>
+<ul>
+<li>At CMOR, we have started using the Open Science Framework (OSF) for collaborative open science</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a href="https://osf.io" class="uri">https://osf.io</a></li>
+</ul>
+<p><br></p>
+<ul>
+<li>The OSF allows both private work (within the research team) and public sharing for dissemination and accessibility</li>
+</ul>
+</section>
+<section id="project-organisation-on-the-osf" class="slide level2">
+<h2>Project organisation on the OSF</h2>
+<p><br></p>
+<ul>
+<li>Work on the OSF is organised into ‘Projects’, which can be nested to create a structured organisation for all of your files, data, code, protocols, and outputs</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Within a projected, nested sub-projects are referred to as ‘Components’
+<ul>
+<li>The advantage of nesting components within a project is that each component can have its own permission settings (contributors, public/private access, etc)</li>
+</ul></li>
+</ul>
+</section>
+<section id="cmor-osf" class="slide level2 smaller">
+<h2>CMOR @ OSF</h2>
+<ul>
+<li>We have set up such a nested structure for research projects at CMOR:</li>
+</ul>
+<p><a href="https://osf.io/stw9e/"><strong>Centre for Musculoskeletal Outcomes Research</strong></a></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Reducing the burden of osteoarthritis in Aotearoa New Zealand
+<ul>
+<li>Discrete Event Simulation modelling</li>
+<li>Risks, Impacts, Equity, and Cost-effectiveness
+<ul>
+<li>Long-term impacts of ligament injury
+<ul>
+<li>Analysis plan</li>
+</ul></li>
+<li>Impacts of opioid use around TJR surgery</li>
+<li>Cost-effectiveness of TJR surgery</li>
+</ul></li>
+<li>He Oranga mō te whanau</li>
+<li>Mātauranga</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:35%;">
+<ul>
+<li>Measuring the health state preferences of New Zealanders
+<ul>
+<li>DCE
+<ul>
+<li>Data management plan</li>
+<li>Protocols</li>
+<li>Data</li>
+<li>Analysis</li>
+<li>Publications</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:25%;">
+<ul>
+<li>Graduate students
+<ul>
+<li>Richelle Caya
+<ul>
+<li>Systematic review</li>
+</ul></li>
+<li>…</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="preregistration" class="slide level2">
+<h2>Preregistration</h2>
+<ul>
+<li><p>Preregistration is the practice of documenting your research plan at the beginning of your study and storing that plan in a read-only public repository (such as the OSF)</p>
+<ul>
+<li>see <a href="https://www.cos.io/initiatives/prereg" class="uri">https://www.cos.io/initiatives/prereg</a></li>
+</ul></li>
+<li><p>Preregistration, including a detailed analysis plan, helps to address issues of reproducibility through reducing the potential for bias in analysis and reporting</p></li>
+<li><p>See <a href="https://help.osf.io/article/158-create-a-preregistration"><strong>Create a preregistration</strong></a> for information on creating and submitting a preregistration for a project on the OSF</p>
+<ul>
+<li>Note that once a preregistration is submitted and approved, you cannot make any changes (by design!), so check everything carefully</li>
+</ul></li>
+</ul>
+</section>
+<section id="resources" class="slide level2 smaller">
 <h2>Resources</h2>
 <ul>
+<li><p>UNESCO Recommendation on Open Science<br>
+<a href="https://www.unesco.org/en/open-science" class="uri">https://www.unesco.org/en/open-science</a></p></li>
 <li><p>Passport for Open Science (Ministry of Higher Education and Research, France)<br>
 <a href="https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/" class="uri">https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/</a></p></li>
 <li><p>The Open Science Training Handbook (FOSTER Open Science)<br>
 <a href="https://open-science-training-handbook.github.io/Open-Science-Training-Handbook_EN/" class="uri">https://open-science-training-handbook.github.io/Open-Science-Training-Handbook_EN/</a></p></li>
-<li><p>UNESCO Recommendation on Open Science<br>
-<a href="https://www.unesco.org/en/open-science" class="uri">https://www.unesco.org/en/open-science</a></p></li>
+<li><p>Otago’s Read &amp; Publish agreements<br>
+<a href="https://otago.libguides.com/research_publishing_impact/read-and-publish" class="uri">https://otago.libguides.com/research_publishing_impact/read-and-publish</a></p></li>
+<li><p>Sherpa Services<br>
+<a href="https://beta.sherpa.ac.uk/" class="uri">https://beta.sherpa.ac.uk/</a></p></li>
+<li><p>OSF<br>
+<a href="https://osf.io" class="uri">https://osf.io</a> (CMOR: <a href="https://osf.io/stw9e/" class="uri">https://osf.io/stw9e/</a>)</p></li>
 </ul>
 <div class="footer footer-default">
 
@@ -608,7 +924,7 @@ Ross Wilson
         height: 700,
 
         // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+        margin: 0.2,
 
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',

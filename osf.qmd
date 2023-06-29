@@ -1,17 +1,36 @@
 ---
-title: "OSF"
+title: "Open Science at CMOR"
+subtitle: "CMOR Lunch'n'Learn"
 author: "Ross Wilson"
-format: revealjs
+date: "2023-06-29"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, cmor.scss]
+    title-slide-attributes: 
+      data-background-image: "images/otago-pennant.png, images/cmor-banner.png, images/title-background.png"
+      data-background-size: "7%, 25%, 100%"
+      data-background-position: "3% 1%, bottom 1% left 50px,0 0"
+      data-background-repeat: "no-repeat"
+    template-partials:
+      - styles.html
+      - title-slide.html
+    margin: 0.2
 ---
 
-# Open Science
+# Introduction to Open Science
 
 ## What is Open Science?
 
-* UNESCO Recommendation on Open Science:\
-*Open science is a set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole.*
+<br>
+
+> Open science is a set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole.
+
+--- UNESCO Recommendation on Open Science
 
 ## "Closed" Science
+
+<br>
 
 * Research published only in paywalled journals that not everyone can access
 
@@ -22,6 +41,8 @@ format: revealjs
 * Science not being accessible to communities that would benefit from it
 
 ## Principles of Open Science
+
+<br>
 
 1. Transparency, scrutiny, critique, and responsibility
 
@@ -35,33 +56,106 @@ format: revealjs
 
 6. Sustainability
 
+## Principles of Open Science
+
+* Today we'll mostly focus on the first principle
+
+  - Transparency, or what we might call 'open scientific knowledge'
+
+<br>
+
+. . .
+
+* Are our publications, data, metadata, protocols, educational resources, software, source code freely available to all?
+
+<br>
+
+. . .
+
+(This is one end of a continuum of 'openness' -- depending on the context, nature of the data, etc., it may not be desirable to make all of these completely open in all circumstances)
+
 ## The Research Workflow
+
+<br>
 
 1. We design a study to answer a research question
 
+<br>
+
+. . .
+
 2. We collect some data
 
+<br>
+
+. . .
+
 3. We analyse the data and write a paper
+
+<br>
+
+. . .
 
 4. The paper gets published
 
 ## The Research Workflow
 
-* Usually, only step **4. The paper gets published**, results in any accessible output
+<br>
 
-  - And often then it is behind a journal paywall and not accessible to all
+* Usually, only 
+
+> 4\. The paper gets published
+
+results in any accessible output
+
+. . .
+
+<br>
+
+(And often then it is behind a journal paywall and not accessible to all)
+
+. . .
+
+<br>
 
 * **1.**, **2.**, and **3.** are often a black box, accessible only to the researcher themselves 
 
-## Components of Open Science (Open Scientific Knowledge)
+## Components of Open Scientific Knowledge
 
-* Open access publication
-
-* Open research data
-
-* Open software/source code
+<br>
 
 * Open protocols/documentation
+* Open research data
+* Open software/source code
+* Open access publication
+
+## Open protocols/documentation
+
+<br>
+
+* RCTs and systematic reviews now generally require registration and pre-specified protocols, e.g.
+  - [ClinicalTrials.gov](https://clinicaltrials.gov) for clinical trials in the US
+  - [ANZCTR](https://anzctr.org.au) in Australia/NZ
+  - [PROSPERO](https://www.crd.york.ac.uk/prospero/) for systematic reviews
+
+<br>
+
+* Usually not required for other study types, but still a good idea
+
+## Open research data
+
+<br>
+
+* Open data allows other researchers to:
+  - check the correctness of your analysis
+  - combine your data with other sources (e.g. IPD meta-analysis)
+  - use your data to answer questions you hadn't even thought of...
+
+* For health data, it is very important to consider the appropriateness of data sharing:
+  - is additional data preprocessing needed to ensure participant anonymity?
+  - should there be restrictions on who can access data and for what purpose?
+
+* If data is being shared, it needs to be documented clearly
 
 # Data sharing -- a cautionary tale
 
@@ -69,13 +163,108 @@ format: revealjs
 
 {{< video https://www.youtube.com/watch?v=N2zK3sAtr-4 width="100%" height="100%" >}}
 
+## Open software/source code
+
+<br>
+
+* As with open data, sharing source code allows others to check the correctness of your analysis
+
+<br>
+
+* Wherever possible, the use of open source or freely-available software allows others (or yourself later) to replicate your work
+
+## Open access publication
+
+<br>
+
+* Research is of no use if no one can access it...
+
+* To ensure our research can reach the widest possible audience, aim for open access publishing whenever possible
+  - Otago has 'Read & Publish' agreements with a number of publishers
+    - <https://otago.libguides.com/research_publishing_impact/read-and-publish>
+
+* Otherwise you can usually post either a 'pre-print' or 'post-print' (accepted manuscript) on an institutional (e.g. OURArchive) or other repository, sometimes after an embargo period.
+  - [Sherpa Services](https://beta.sherpa.ac.uk/) provides an easy search function to look up journals' sharing policies
+    
+# Open Science Framework
+
 ## Open Science Framework
+
+<br>
 
 * At CMOR, we have started using the Open Science Framework (OSF) for collaborative open science
 
-* [https://osf.io](https://osf.io/stw9e/)
+<br>
 
-## Resources
+* <https://osf.io>
+
+<br>
+
+* The OSF allows both private work (within the research team) and public sharing for dissemination and accessibility
+
+## Project organisation on the OSF
+
+<br>
+
+* Work on the OSF is organised into 'Projects', which can be nested to create a structured organisation for all of your files, data, code, protocols, and outputs
+
+<br>
+
+* Within a projected, nested sub-projects are referred to as 'Components'
+  - The advantage of nesting components within a project is that each component can have its own permission settings (contributors, public/private access, etc)
+
+## CMOR @ OSF {.smaller}
+
+* We have set up such a nested structure for research projects at CMOR:
+
+[**Centre for Musculoskeletal Outcomes Research**](https://osf.io/stw9e/)
+
+:::::{.columns}
+
+::: {.column width="40%"}
+* Reducing the burden of osteoarthritis in Aotearoa New Zealand
+  - Discrete Event Simulation modelling
+  - Risks, Impacts, Equity, and Cost-effectiveness
+    - Long-term impacts of ligament injury
+      - Analysis plan
+    - Impacts of opioid use around TJR surgery
+    - Cost-effectiveness of TJR surgery
+  - He Oranga mō te whanau
+  - Mātauranga
+:::
+
+::: {.column width="35%"}
+* Measuring the health state preferences of New Zealanders
+  - DCE
+    - Data management plan
+    - Protocols
+    - Data
+    - Analysis
+    - Publications
+:::
+
+::: {.column width="25%"}
+* Graduate students
+  - Richelle Caya
+    - Systematic review
+  - ...
+:::
+:::::
+
+## Preregistration
+
+* Preregistration is the practice of documenting your research plan at the beginning of your study and storing that plan in a read-only public repository (such as the OSF)
+  - see <https://www.cos.io/initiatives/prereg>
+
+* Preregistration, including a detailed analysis plan, helps to address issues of reproducibility through reducing the potential for bias in analysis and reporting
+
+* See [**Create a preregistration**](https://help.osf.io/article/158-create-a-preregistration) for information on creating and submitting a preregistration for a project on the OSF
+  - Note that once a preregistration is submitted and approved, you cannot make any changes (by design!), so check everything carefully
+
+## Resources {.smaller}
+
+* UNESCO Recommendation on Open Science\
+<https://www.unesco.org/en/open-science>
 
 * Passport for Open Science (Ministry of Higher Education and Research, France)\
 <https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/>
@@ -83,7 +272,11 @@ format: revealjs
 * The Open Science Training Handbook (FOSTER Open Science)\
 <https://open-science-training-handbook.github.io/Open-Science-Training-Handbook_EN/>
 
-* UNESCO Recommendation on Open Science\
-<https://www.unesco.org/en/open-science>
+* Otago's Read & Publish agreements\
+<https://otago.libguides.com/research_publishing_impact/read-and-publish>
 
+* Sherpa Services\
+<https://beta.sherpa.ac.uk/>
 
+* OSF\
+<https://osf.io> (CMOR: <https://osf.io/stw9e/>)

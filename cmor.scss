@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: sans-serif !default;
+$presentation-font-size-root: 32px !default;
+$presentation-font-smaller: 0.8 !default;
+
+// colors
+$body-bg: #fff !default;
+$body-color: #000 !default;
+$link-color: #00008b !default;
+$selection-bg: rgba(0, 0, 0, 0.99);
+$presentation-heading-color: #002060 !default;
+
+// headings
+$presentation-heading-font: sans-serif !default;
+
+/*-- scss:mixins --*/
+@mixin bodyBackground() {
+	background-image: url("/images/otago-pennant.png"), url("/images/cmor-banner.png");
+	background-size: 7%, 25%;
+	background-repeat: no-repeat;
+	background-position: 3% 1%, bottom 1% left 50px;
+}
+
+/*-- scss:rules --*/
+#title-slide .subtitle {
+	margin-top: 100px;
+	margin-bottom: 0px;
+}
